@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pagamento Confirmado</title>
-  <style>
-    body {
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px 20px;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pagamento Confirmado</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-    .container {
-      background: white;
-      max-width: 400px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
+        .container {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
 
-    h1 {
-      color: #28a745;
-      font-size: 28px;
-    }
+        h1 {
+            color: #28a745;
+            font-size: 28px;
+        }
 
-    p {
-      font-size: 18px;
-      margin-top: 20px;
-      color: #555;
-    }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #555;
+        }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      background: #28a745;
-      color: white;
-      padding: 15px 25px;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 18px;
-      transition: background 0.3s;
-    }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
 
-    .btn:hover {
-      background: #218838;
-    }
-  </style>
+        .btn:hover {
+            background: #218838;
+        }
+    </style>
 </head>
 <body>
-  <!-- Meta Pixel Code -->
-  <script>
+    <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -63,19 +62,20 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2157896137958065');
     fbq('track', 'PageView');
-  </script>
-  <noscript>
+    fbq('init', '1616232952319054'); // Adicionado o novo pixel aqui
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=2157896137958065&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1616232952319054&ev=PageView&noscript=1"/> </noscript>
+    <div class="container">
+        <h1>✅ Pagamento Confirmado!</h1>
+        <p>Seu acesso foi liberado com sucesso.<br>
+        Clique no botão abaixo para acessar o conteúdo exclusivo:</p>
 
-  <div class="container">
-    <h1>✅ Pagamento Confirmado!</h1>
-    <p>Seu acesso foi liberado com sucesso.<br>
-    Clique no botão abaixo para acessar o conteúdo exclusivo:</p>
-
-    <a class="btn" href="https://t.me/+5bM1UtO4oFphMTU0" target="_blank">👉 Acessar Conteúdo</a>
-  </div>
+        <a class="btn" href="https://t.me/+5bM1UtO4oFphMTU0" target="_blank">👉 Acessar Conteúdo</a>
+    </div>
 </body>
 </html>
